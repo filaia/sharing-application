@@ -9,19 +9,42 @@
 /* Begin PBXBuildFile section */
 		D42C3B972AC21ADB00EE9BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3B962AC21ADB00EE9BA4 /* AppDelegate.swift */; };
 		D42C3B992AC21ADB00EE9BA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3B982AC21ADB00EE9BA4 /* SceneDelegate.swift */; };
-		D42C3B9B2AC21ADB00EE9BA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3B9A2AC21ADB00EE9BA4 /* ViewController.swift */; };
 		D42C3BA02AC21ADC00EE9BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42C3B9F2AC21ADC00EE9BA4 /* Assets.xcassets */; };
 		D42C3BA32AC21ADC00EE9BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C3BA12AC21ADC00EE9BA4 /* LaunchScreen.storyboard */; };
+		D42C3BAD2AC21DA800EE9BA4 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BAC2AC21DA800EE9BA4 /* AuthCoordinator.swift */; };
+		D42C3BB02AC21DC300EE9BA4 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BAF2AC21DC300EE9BA4 /* Networking.swift */; };
+		D42C3BB22AC21DCD00EE9BA4 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BB12AC21DCD00EE9BA4 /* ViewControllerFactory.swift */; };
+		D42C3BB52AC21DE900EE9BA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BB42AC21DE900EE9BA4 /* User.swift */; };
+		D42C3BB82AC21DFC00EE9BA4 /* UIViewController+keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BB72AC21DFC00EE9BA4 /* UIViewController+keyboard.swift */; };
+		D42C3BBB2AC21E1000EE9BA4 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BBA2AC21E1000EE9BA4 /* AuthTextField.swift */; };
+		D42C3BBF2AC21E3600EE9BA4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BBE2AC21E3600EE9BA4 /* FeedViewController.swift */; };
+		D42C3BC12AC21E3C00EE9BA4 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BC02AC21E3C00EE9BA4 /* FeedViewModel.swift */; };
+		D42C3BC52AC21E5800EE9BA4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BC42AC21E5800EE9BA4 /* SignUpViewController.swift */; };
+		D42C3BC72AC21E6000EE9BA4 /* SingUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BC62AC21E6000EE9BA4 /* SingUpViewModel.swift */; };
+		D42C3BCA2AC21E7100EE9BA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BC92AC21E7100EE9BA4 /* LoginViewController.swift */; };
+		D42C3BCD2AC21E8D00EE9BA4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BCC2AC21E8D00EE9BA4 /* LoginViewModel.swift */; };
+		D42C3BD02AC21EC000EE9BA4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D42C3BCF2AC21EC000EE9BA4 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D42C3B932AC21ADB00EE9BA4 /* SharingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42C3B962AC21ADB00EE9BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D42C3B982AC21ADB00EE9BA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D42C3B9A2AC21ADB00EE9BA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D42C3B9F2AC21ADC00EE9BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D42C3BA22AC21ADC00EE9BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D42C3BA42AC21ADC00EE9BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42C3BAC2AC21DA800EE9BA4 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		D42C3BAF2AC21DC300EE9BA4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D42C3BB12AC21DCD00EE9BA4 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		D42C3BB42AC21DE900EE9BA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D42C3BB72AC21DFC00EE9BA4 /* UIViewController+keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+keyboard.swift"; sourceTree = "<group>"; };
+		D42C3BBA2AC21E1000EE9BA4 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		D42C3BBE2AC21E3600EE9BA4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D42C3BC02AC21E3C00EE9BA4 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		D42C3BC42AC21E5800EE9BA4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D42C3BC62AC21E6000EE9BA4 /* SingUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewModel.swift; sourceTree = "<group>"; };
+		D42C3BC92AC21E7100EE9BA4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D42C3BCC2AC21E8D00EE9BA4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42C3BD02AC21EC000EE9BA4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +78,113 @@
 		D42C3B952AC21ADB00EE9BA4 /* SharingApplication */ = {
 			isa = PBXGroup;
 			children = (
+				D42C3BD22AC220E100EE9BA4 /* Common */,
+				D42C3BBC2AC21E1D00EE9BA4 /* Screens */,
+				D42C3BAA2AC21D9900EE9BA4 /* Services */,
 				D42C3B962AC21ADB00EE9BA4 /* AppDelegate.swift */,
 				D42C3B982AC21ADB00EE9BA4 /* SceneDelegate.swift */,
-				D42C3B9A2AC21ADB00EE9BA4 /* ViewController.swift */,
 				D42C3B9F2AC21ADC00EE9BA4 /* Assets.xcassets */,
 				D42C3BA12AC21ADC00EE9BA4 /* LaunchScreen.storyboard */,
 				D42C3BA42AC21ADC00EE9BA4 /* Info.plist */,
 			);
 			path = SharingApplication;
+			sourceTree = "<group>";
+		};
+		D42C3BAA2AC21D9900EE9BA4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BAB2AC21D9E00EE9BA4 /* Coordinators */,
+				D42C3BAF2AC21DC300EE9BA4 /* Networking.swift */,
+				D42C3BB12AC21DCD00EE9BA4 /* ViewControllerFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D42C3BAB2AC21D9E00EE9BA4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BAC2AC21DA800EE9BA4 /* AuthCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D42C3BB32AC21DDF00EE9BA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BB42AC21DE900EE9BA4 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D42C3BB62AC21DF200EE9BA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BB72AC21DFC00EE9BA4 /* UIViewController+keyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D42C3BB92AC21E0A00EE9BA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BBA2AC21E1000EE9BA4 /* AuthTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D42C3BBC2AC21E1D00EE9BA4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BD12AC2209100EE9BA4 /* Feed */,
+				D42C3BC22AC21E4800EE9BA4 /* Auth */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D42C3BC22AC21E4800EE9BA4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BC82AC21E6400EE9BA4 /* Login */,
+				D42C3BC32AC21E4A00EE9BA4 /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D42C3BC32AC21E4A00EE9BA4 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BC42AC21E5800EE9BA4 /* SignUpViewController.swift */,
+				D42C3BC62AC21E6000EE9BA4 /* SingUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		D42C3BC82AC21E6400EE9BA4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BC92AC21E7100EE9BA4 /* LoginViewController.swift */,
+				D42C3BCC2AC21E8D00EE9BA4 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D42C3BD12AC2209100EE9BA4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BBE2AC21E3600EE9BA4 /* FeedViewController.swift */,
+				D42C3BC02AC21E3C00EE9BA4 /* FeedViewModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D42C3BD22AC220E100EE9BA4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3BB32AC21DDF00EE9BA4 /* Models */,
+				D42C3BB62AC21DF200EE9BA4 /* Extensions */,
+				D42C3BB92AC21E0A00EE9BA4 /* Views */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +203,9 @@
 			dependencies = (
 			);
 			name = SharingApplication;
+			packageProductDependencies = (
+				D42C3BCF2AC21EC000EE9BA4 /* SnapKit */,
+			);
 			productName = SharingApplication;
 			productReference = D42C3B932AC21ADB00EE9BA4 /* SharingApplication.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +234,9 @@
 				Base,
 			);
 			mainGroup = D42C3B8A2AC21ADB00EE9BA4;
+			packageReferences = (
+				D42C3BCE2AC21EC000EE9BA4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D42C3B942AC21ADB00EE9BA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +263,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42C3B9B2AC21ADB00EE9BA4 /* ViewController.swift in Sources */,
+				D42C3BCA2AC21E7100EE9BA4 /* LoginViewController.swift in Sources */,
+				D42C3BB02AC21DC300EE9BA4 /* Networking.swift in Sources */,
+				D42C3BBF2AC21E3600EE9BA4 /* FeedViewController.swift in Sources */,
 				D42C3B972AC21ADB00EE9BA4 /* AppDelegate.swift in Sources */,
+				D42C3BB82AC21DFC00EE9BA4 /* UIViewController+keyboard.swift in Sources */,
+				D42C3BC12AC21E3C00EE9BA4 /* FeedViewModel.swift in Sources */,
+				D42C3BC52AC21E5800EE9BA4 /* SignUpViewController.swift in Sources */,
+				D42C3BCD2AC21E8D00EE9BA4 /* LoginViewModel.swift in Sources */,
+				D42C3BB22AC21DCD00EE9BA4 /* ViewControllerFactory.swift in Sources */,
+				D42C3BAD2AC21DA800EE9BA4 /* AuthCoordinator.swift in Sources */,
+				D42C3BBB2AC21E1000EE9BA4 /* AuthTextField.swift in Sources */,
 				D42C3B992AC21ADB00EE9BA4 /* SceneDelegate.swift in Sources */,
+				D42C3BB52AC21DE900EE9BA4 /* User.swift in Sources */,
+				D42C3BC72AC21E6000EE9BA4 /* SingUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D42C3BCE2AC21EC000EE9BA4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D42C3BCF2AC21EC000EE9BA4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D42C3BCE2AC21EC000EE9BA4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D42C3B8B2AC21ADB00EE9BA4 /* Project object */;
 }
