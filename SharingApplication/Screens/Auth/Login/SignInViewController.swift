@@ -1,19 +1,19 @@
 //
-//  SignUpViewController.swift
+//  SignInViewController.swift
 //  SharingApplication
 //
 //  Created by Philip Zakharov on 25.09.2023.
 //
 
-import Foundation
 import UIKit
+import SnapKit
 
-final class SignUpViewController: UIViewController {
+final class SignInViewController: UIViewController {
     
-    var signUpViewModel: SignUpViewModel
-
-    init(signUpViewModel: SignUpViewModel) {
-        self.signUpViewModel = signUpViewModel
+    var signInViewModel: SignInViewModel
+    
+    init(signInViewModel: SignInViewModel) {
+        self.signInViewModel = signInViewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -21,16 +21,10 @@ final class SignUpViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let usernameTextField: AuthTextField = {
-        let textField = AuthTextField()
-        textField.placeholder = "Enter your username"
-        textField.keyboardType = .emailAddress
-        return textField
-    }()
-    
     private let emailTextField: AuthTextField = {
         let textField = AuthTextField()
         textField.placeholder = "Enter your email addression"
+        textField.text = "Test@gmail.com"
         textField.keyboardType = .emailAddress
         return textField
     }()
@@ -38,26 +32,29 @@ final class SignUpViewController: UIViewController {
     private let passwordTextField: AuthTextField = {
         let textField = AuthTextField()
         textField.placeholder = "Enter your password"
+        textField.text = "Password"
         return textField
     }()
     
-    private lazy var createAccountButton = UIButton(configuration: .tinted(), primaryAction: UIAction(title: "Create an account", handler: { action in
-        let username = self.usernameTextField.text ?? String()
+    private lazy var signInButton = UIButton(configuration: .tinted(), primaryAction: UIAction(title: "Sign in", handler: { action in
         let email = self.emailTextField.text ?? String()
         let password = self.passwordTextField.text ?? String()
-        
         Task {
             do {
-                let result = try await self.signUpViewModel.signUp(username: username, email: email, password: password)
-                if result {
-                    self.signUpViewModel.goBack()
+                let success = try await self.signInViewModel.signIn(user: SignInUserRequest(email: email, password: password))
+                if success {
+                    self.signInViewModel.goToFeed()
                 }
-            } catch let error {
-                print(error)
+            } catch {
+                print("error")
             }
         }
     }))
-
+    
+    private lazy var signUpButton = UIButton(configuration: .borderless(), primaryAction: UIAction(title: "Sign Up", handler: { action in
+        self.signInViewModel.goToSignUp()
+    }))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -67,16 +64,9 @@ final class SignUpViewController: UIViewController {
     private func setupViews() {
         view.backgroundColor = .white
         
-        view.addSubview(usernameTextField)
-        usernameTextField.snp.makeConstraints { make in
-            make.top.equalTo(view.snp.topMargin)
-            make.leading.equalTo(view.snp.leadingMargin)
-            make.trailing.equalTo(view.snp.trailingMargin)
-        }
-        
         view.addSubview(emailTextField)
         emailTextField.snp.makeConstraints { make in
-            make.top.equalTo(usernameTextField.snp.bottom).offset(Constraint.marginVertical)
+            make.top.equalTo(view.snp.topMargin)
             make.leading.equalTo(view.snp.leadingMargin)
             make.trailing.equalTo(view.snp.trailingMargin)
         }
@@ -88,11 +78,16 @@ final class SignUpViewController: UIViewController {
             make.trailing.equalTo(view.snp.trailingMargin)
         }
         
-        view.addSubview(createAccountButton)
-        createAccountButton.snp.makeConstraints { make in
-            make.top.equalTo(passwordTextField.snp.bottom).offset(Constraint.marginVertical)
+        view.addSubview(signInButton)
+        signInButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
+            make.top.equalTo(passwordTextField.snp.bottom).offset(Constraint.marginVertical)
+        }
+        
+        view.addSubview(signUpButton)
+        signUpButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(signInButton.snp.bottom)
         }
     }
 }
-

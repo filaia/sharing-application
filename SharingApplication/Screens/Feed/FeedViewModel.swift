@@ -6,24 +6,21 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 final class FeedViewModel {
-    let networking: MockNetworking
-    let user: User
+    let coordinator: AppCoordinator
     
-    init(networking: MockNetworking, user: User) {
-        self.networking = networking
-        self.user = user
+    init(coordinator: AppCoordinator) {
+        self.coordinator = coordinator
     }
     
-    func getEmail() -> String {
-        user.email
-    }
-    
-    func fetchUser(completion: @escaping (String) -> ()) {
-        networking.getDataFromServer { _ in
-            completion(self.user.email)
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+        } catch let error {
+            print(error)
         }
+        coordinator.showSignIn()
     }
-    
 }

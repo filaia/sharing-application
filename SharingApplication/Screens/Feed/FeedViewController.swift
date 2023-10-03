@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth // ?
 
 final class FeedViewController: UIViewController {
     
@@ -21,8 +22,8 @@ final class FeedViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
         
-    private let signOutButton = UIButton(configuration: .tinted(), primaryAction: UIAction(title: "Sign out", handler: { _ in
-        print("sign out")
+    private lazy var signOutButton = UIButton(configuration: .tinted(), primaryAction: UIAction(title: "Sign out", handler: { _ in
+        self.feedViewModel.logout()
     }))
     
     private let textLabel: UILabel = {
@@ -34,15 +35,7 @@ final class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        dismissKeyboardTouchOutside()
-        
-        getData()
-    }
-    
-    func getData() {
-        DispatchQueue.main.async {
-            self.textLabel.text = self.feedViewModel.getEmail()
-        }
+        dismissKeyboardTouchOutside()        
     }
     
     private func setupViews() {
