@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignUpViewModel {
+final class SignUpViewModel {
     
     private var coordinator: AppCoordinator
     

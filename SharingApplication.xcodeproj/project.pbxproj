@@ -29,7 +29,11 @@
 		D42C3BE02AC2273600EE9BA4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D42C3BDF2AC2273600EE9BA4 /* FirebaseStorage */; };
 		D42C3BE22AC227BF00EE9BA4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BE12AC227BF00EE9BA4 /* AuthService.swift */; };
 		D42C3BE52AC2284700EE9BA4 /* SignUpUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C3BE42AC2284700EE9BA4 /* SignUpUserRequest.swift */; };
+		D43D908F2ACC618D00C0DA26 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D908E2ACC618D00C0DA26 /* FeedModel.swift */; };
+		D43D90912ACC629000C0DA26 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D90902ACC629000C0DA26 /* Identifiers.swift */; };
+		D43D90932ACC6B5E00C0DA26 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D90922ACC6B5E00C0DA26 /* FeedCollectionViewCell.swift */; };
 		D43FF0092AC471DA00A692AA /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43FF0082AC471DA00A692AA /* Constraints.swift */; };
+		D497C3C92AD5856C006D1B32 /* ScaledImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497C3C82AD5856C006D1B32 /* ScaledImageView.swift */; };
 		D4E629812AC3647900E5B2A6 /* SignInUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E629802AC3647900E5B2A6 /* SignInUserRequest.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +57,11 @@
 		D42C3BD32AC2220400EE9BA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D42C3BE12AC227BF00EE9BA4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D42C3BE42AC2284700EE9BA4 /* SignUpUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserRequest.swift; sourceTree = "<group>"; };
+		D43D908E2ACC618D00C0DA26 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		D43D90902ACC629000C0DA26 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		D43D90922ACC6B5E00C0DA26 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		D43FF0082AC471DA00A692AA /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		D497C3C82AD5856C006D1B32 /* ScaledImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledImageView.swift; sourceTree = "<group>"; };
 		D4E629802AC3647900E5B2A6 /* SignInUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUserRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,15 +131,6 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		D42C3BB32AC21DDF00EE9BA4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D42C3BE42AC2284700EE9BA4 /* SignUpUserRequest.swift */,
-				D4E629802AC3647900E5B2A6 /* SignInUserRequest.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		D42C3BB62AC21DF200EE9BA4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				D42C3BBA2AC21E1000EE9BA4 /* AuthTextField.swift */,
+				D43D90922ACC6B5E00C0DA26 /* FeedCollectionViewCell.swift */,
+				D497C3C82AD5856C006D1B32 /* ScaledImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +161,7 @@
 		D42C3BC22AC21E4800EE9BA4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				D42C3BC82AC21E6400EE9BA4 /* Login */,
+				D42C3BC82AC21E6400EE9BA4 /* SignIn */,
 				D42C3BC32AC21E4A00EE9BA4 /* SignUp */,
 			);
 			path = Auth;
@@ -169,19 +170,21 @@
 		D42C3BC32AC21E4A00EE9BA4 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				D42C3BE42AC2284700EE9BA4 /* SignUpUserRequest.swift */,
 				D42C3BC42AC21E5800EE9BA4 /* SignUpViewController.swift */,
 				D42C3BC62AC21E6000EE9BA4 /* SingUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
 		};
-		D42C3BC82AC21E6400EE9BA4 /* Login */ = {
+		D42C3BC82AC21E6400EE9BA4 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				D4E629802AC3647900E5B2A6 /* SignInUserRequest.swift */,
 				D42C3BC92AC21E7100EE9BA4 /* SignInViewController.swift */,
 				D42C3BCC2AC21E8D00EE9BA4 /* SignInViewModel.swift */,
 			);
-			path = Login;
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		D42C3BD12AC2209100EE9BA4 /* Feed */ = {
@@ -189,6 +192,7 @@
 			children = (
 				D42C3BBE2AC21E3600EE9BA4 /* FeedViewController.swift */,
 				D42C3BC02AC21E3C00EE9BA4 /* FeedViewModel.swift */,
+				D43D908E2ACC618D00C0DA26 /* FeedModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -197,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				D43FF0072AC471AE00A692AA /* Constants */,
-				D42C3BB32AC21DDF00EE9BA4 /* Models */,
 				D42C3BB62AC21DF200EE9BA4 /* Extensions */,
 				D42C3BB92AC21E0A00EE9BA4 /* Views */,
 			);
@@ -208,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				D43FF0082AC471DA00A692AA /* Constraints.swift */,
+				D43D90902ACC629000C0DA26 /* Identifiers.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -296,8 +300,11 @@
 			files = (
 				D42C3BE52AC2284700EE9BA4 /* SignUpUserRequest.swift in Sources */,
 				D42C3BCA2AC21E7100EE9BA4 /* SignInViewController.swift in Sources */,
+				D43D908F2ACC618D00C0DA26 /* FeedModel.swift in Sources */,
 				D42C3BBF2AC21E3600EE9BA4 /* FeedViewController.swift in Sources */,
+				D43D90912ACC629000C0DA26 /* Identifiers.swift in Sources */,
 				D43FF0092AC471DA00A692AA /* Constraints.swift in Sources */,
+				D497C3C92AD5856C006D1B32 /* ScaledImageView.swift in Sources */,
 				D42C3B972AC21ADB00EE9BA4 /* AppDelegate.swift in Sources */,
 				D42C3BB82AC21DFC00EE9BA4 /* UIViewController+keyboard.swift in Sources */,
 				D4E629812AC3647900E5B2A6 /* SignInUserRequest.swift in Sources */,
@@ -307,6 +314,7 @@
 				D42C3BB22AC21DCD00EE9BA4 /* ViewControllerFactory.swift in Sources */,
 				D42C3BAD2AC21DA800EE9BA4 /* AppCoordinator.swift in Sources */,
 				D42C3BBB2AC21E1000EE9BA4 /* AuthTextField.swift in Sources */,
+				D43D90932ACC6B5E00C0DA26 /* FeedCollectionViewCell.swift in Sources */,
 				D42C3B992AC21ADB00EE9BA4 /* SceneDelegate.swift in Sources */,
 				D42C3BE22AC227BF00EE9BA4 /* AuthService.swift in Sources */,
 				D42C3BC72AC21E6000EE9BA4 /* SingUpViewModel.swift in Sources */,

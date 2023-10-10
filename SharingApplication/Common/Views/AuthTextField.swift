@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AuthTextField: UITextField {
+final class AuthTextField: UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)

@@ -9,11 +9,26 @@ import Foundation
 import FirebaseAuth
 
 final class FeedViewModel {
-    let coordinator: AppCoordinator
+    private let coordinator: AppCoordinator
+    var feedModel: [FeedModel] = []
+    
+    var feedCount: Int {
+        feedModel.count
+    }
     
     init(coordinator: AppCoordinator) {
         self.coordinator = coordinator
     }
+    
+    func fetchTestData() {
+        Task {
+            do {
+                self.feedModel = try await FeedModel.getTestData()
+            } catch {
+                print("Error fetching test data: \(error)")
+            }
+        }
+    }    
     
     func logout() {
         do {
